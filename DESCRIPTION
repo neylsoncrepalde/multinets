@@ -21,4 +21,5 @@ Suggests:
     testthat
 ByteCompile: true
 RoxygenNote: 6.0.1
-URL: https://cran.r-project.org/package=multinets
+URL: https://github.com/neylsoncrepalde/multinets
+BugReports: https://github.com/neylsoncrepalde/multinets/issues
