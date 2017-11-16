@@ -1,0 +1,24 @@
+Package: multinets
+Title: Multilevel Networks Analysis
+Version: 0.1.0
+Authors@R: person("Neylson", "Crepalde", email = "neylsoncrepalde@gmail.com",
+                  role = c("aut", "cre"))
+Description: Multilevel Networks is an R package with functions to analyze
+    multilevel networks. It was developed essentially as an extension to the
+    igraph package.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.4.1)
+Imports:
+    igraph
+Suggests:
+    sand,
+    statnet,
+    mixer,
+    data.table,
+    testthat
+ByteCompile: true
+RoxygenNote: 6.0.1
+URL: https://cran.r-project.org/package=multinets

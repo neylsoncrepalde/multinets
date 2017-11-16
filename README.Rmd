@@ -1,0 +1,40 @@
+---
+title: "multinets: Multilevel Network Analysis"
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+`multinets` is an R package that provides tools to visualize and analyze Multilevel Network Data. It was built as an extension to the [`igraph`](http://igraph.org/r/) package.
+
+## Installation
+
+The `multinets` package is developed under control version using Git 
+and is hosted in GitHub. You can download it from GitHub using `devtools`:
+```{r install, eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("neylsoncrepalde/multinets")
+```
+
+
+## Usage
+
+As a basic example, we will plot a multilevel network. We are going to use `linked_sim`, a simulated multilevel network dataset.
+
+```{r example, fig.width=8, fig.height=7}
+library(multinets)
+data("linked_sim")
+
+# Test if the data is a multilevel network
+is_multilevel(linked_sim)
+
+# Set the layout coordinates
+l <- layout_multilevel(linked_sim, layout = layout_with_kk)
+
+# Set different colors and shapes for each level vertices
+linked_sim <- set_color_multilevel(linked_sim)
+linked_sim <- set_shape_multilevel(linked_sim)
+
+# Plot
+plot(linked_sim, layout = l, vertex.size = 5, vertex.label = NA)
+```
