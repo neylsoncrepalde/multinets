@@ -3,7 +3,17 @@ title: "multinets: Multilevel Network Analysis"
 output: github_document
 ---
 
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+```
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+[![Travis build status](https://travis-ci.org/neylsoncrepalde/multinets.svg?branch=master)](https://travis-ci.org/neylsoncrepalde/multinets)
 
 `multinets` is an R package that provides tools to visualize and analyze Multilevel Network Data. It was built as an extension to the [`igraph`](http://igraph.org/r/) package.
 
