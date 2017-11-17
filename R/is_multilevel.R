@@ -11,7 +11,7 @@
 #'   of vertex and two kinds of edges: Vertices on the lower level are,
 #'   usually, individuals. Vertices on the higher level are, usually,
 #'   organizations, collectivities or other kinds of social joint
-#'   structures. The fisrt kind of edges are those between the vertices
+#'   structures. The first kind of edges are those between the vertices
 #'   of the higher level and between the vertices of the lower level. The
 #'   second kind of edges are those between the vertices of different levels
 #'   (affiliation ties).

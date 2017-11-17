@@ -14,7 +14,7 @@ set_color_multilevel(x, color.true = "blue", color.false = "red",
 level (attribute \code{type} set to \code{TRUE}).}
 
 \item{color.false}{a character. The color to be chosen for the lower
-level (attrinute \code{type} set to \code{FALSE}).}
+level (attribute \code{type} set to \code{FALSE}).}
 
 \item{V.alpha}{numeric. The factor modifying the opacity alpha for the
 vertices; typically in [0,1].}

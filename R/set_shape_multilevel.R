@@ -8,7 +8,7 @@
 #' @param shape.true a character. The shape to be chosen for the higher
 #'   level (attribute \code{type} set to \code{TRUE}).
 #' @param shape.false a character. The shape to be chosen for the lower
-#'   level (attrinute \code{type} set to \code{FALSE}).
+#'   level (attribute \code{type} set to \code{FALSE}).
 #'
 #' @return A graph object. A multilevel network with an added \code{shape}
 #'   vertex attribute vector.

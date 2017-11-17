@@ -13,7 +13,7 @@ set_shape_multilevel(x, shape.true = "square", shape.false = "circle")
 level (attribute \code{type} set to \code{TRUE}).}
 
 \item{shape.false}{a character. The shape to be chosen for the lower
-level (attrinute \code{type} set to \code{FALSE}).}
+level (attribute \code{type} set to \code{FALSE}).}
 }
 \value{
 A graph object. A multilevel network with an added \code{shape}

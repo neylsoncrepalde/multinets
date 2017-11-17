@@ -8,7 +8,7 @@
 #' @param color.true a character. The color to be chosen for the higher
 #'   level (attribute \code{type} set to \code{TRUE}).
 #' @param color.false a character. The color to be chosen for the lower
-#'   level (attrinute \code{type} set to \code{FALSE}).
+#'   level (attribute \code{type} set to \code{FALSE}).
 #' @param V.alpha numeric. The factor modifying the opacity alpha for the
 #'   vertices; typically in [0,1].
 #' @param E.alpha numeric. The factor modifying the opacity alpha for the
