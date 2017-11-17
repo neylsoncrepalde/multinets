@@ -3,3 +3,5 @@
 ^LICENSE\.md$
 ^README\.Rmd$
 ^\.travis\.yml$
+^man/cran/cran-comments\.md$
+^/man/figures/README-example-1\.png$
