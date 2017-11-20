@@ -20,11 +20,11 @@ If which is set to "both" (default), returns a list with two
   object.
 }
 \description{
-This function is a wrapper to the \code{bipartite_projection()} function from
-  the igraph package. It transforms a bipartite (2-mode) network to two
-  1-mode networks. It is recommended to use it as an analysis
+This function is a wrapper to the \code{\link[igraph]{bipartite_projection}}
+  function from the 'igraph' package. It transforms a bipartite (2-mode)
+  network to two 1-mode networks. It is recommended to use it as an analysis
   tool for a bipartite network that was obtained from
-  \code{extract_mesolevel()} function.
+  \code{\link{extract_mesolevel}}.
 }
 \details{
 The function counts 1 edge when two vertices of the
@@ -32,13 +32,15 @@ The function counts 1 edge when two vertices of the
   of the lower level are affiliated to the same vertex in the higher level.
 }
 \examples{
-\dontrun{
+# First, extract the mesolevel of the multilevel network
+affiliation <- extract_mesolevel(linked_sim)
+
 # To obtain both transformed networks
 transformed <- mode_transformation(affiliation)
 
 # To obtain just one transformed network
 high_transformed <- mode_transformation(affiliation, which = "high")
-}
+
 
 }
 \author{

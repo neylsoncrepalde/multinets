@@ -11,15 +11,15 @@
 #'
 #' @inheritParams set_color_multilevel
 #'
-#' @param layout The chosen layout algorithm. Default set to
-#'   'Fruchterman-Reingold'.
+#' @param layout The chosen layout algorithm. A function layout of the 'igraph'
+#'   package without parentheses. Default set to 'Fruchterman-Reingold'.
 #'
 #' @return A two- or three-column matrix, each row giving the coordinates of
 #'   a vertex, according to the ids of the vertex ids.
 #'
+#' @seealso \code{\link[igraph]{layout_}}
 #'
 #' @examples
-#' \dontrun{
 #' # Check if the network is multilevel
 #' is_multilevel(linked_sim)
 #'
@@ -34,7 +34,7 @@
 #'
 #' # Plot the graph with the new layout
 #' plot(linked_sim, layout = l.kk)
-#' }
+#'
 
 #' @export
 layout_multilevel <- function(x, layout = igraph::layout_with_fr){

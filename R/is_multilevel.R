@@ -4,7 +4,7 @@
 #'
 #' @param x A graph object.
 #'
-#' @description This function checks whether a network (a graph) is multilevel
+#' @description Checks whether a network (a graph) is multilevel
 #'   according to the \emph{linked design} proposed by Lazega et al (2008).
 #'
 #' @details A multilevel network can be defined as a network with two kinds
@@ -27,9 +27,11 @@
 #'     Network Analysis for the Social Sciences}: Theory, Methods and
 #'     Applications, Springer, Methodos Series.
 #'
-#' @examples \dontrun{
+#' @seealso \code{\link[igraph]{is_bipartite}}
+#'
+#' @examples
 #'   is_multilevel(linked_sim)
-#'   }
+#'
 #' @export
 is_multilevel <- function(x){
   if (class(x) != "igraph"){

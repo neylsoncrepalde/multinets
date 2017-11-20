@@ -10,7 +10,7 @@ is_multilevel(x)
 \item{x}{A graph object.}
 }
 \description{
-This function checks whether a network (a graph) is multilevel
+Checks whether a network (a graph) is multilevel
   according to the \emph{linked design} proposed by Lazega et al (2008).
 }
 \details{
@@ -27,9 +27,8 @@ A multilevel network can be defined as a network with two kinds
   that has ties between nodes on both levels.
 }
 \examples{
-\dontrun{
   is_multilevel(linked_sim)
-  }
+
 }
 \references{
 Lazega, E., Jourda, M. T., Mounier, L., & Stofer, R. (2008).
@@ -39,6 +38,9 @@ Lazega, E., Jourda, M. T., Mounier, L., & Stofer, R. (2008).
     Lazega, E. and Snijders, Tom A.B. (eds) (2016),  \emph{Multilevel
     Network Analysis for the Social Sciences}: Theory, Methods and
     Applications, Springer, Methodos Series.
+}
+\seealso{
+\code{\link[igraph]{is_bipartite}}
 }
 \author{
 Neylson Crepalde, \email{neylsoncrepalde@gmail.com}

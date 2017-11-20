@@ -24,13 +24,12 @@ Set vertices shapes for a multilevel network.
   Default set to "square" (higher level) and "circle" (lower level).
 }
 \examples{
-\dontrun{
 # Check whether a graph is multilevel
 is_multilevel(linked_sim)
 
 # Set the shapes for each level
 linked_sim <- set_shape_multilevel(linked_sim)
-}
+
 
 }
 \author{

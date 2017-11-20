@@ -31,13 +31,12 @@ Set vertices and edges colors for a multilevel network.
   Default set to blue (higher level) and red (lower level).
 }
 \examples{
-\dontrun{
 # Check whether a graph is multilevel
 is_multilevel(linked_sim)
 
 # Set the colors for each level
 linked_sim <- set_color_multilevel(linked_sim)
-}
+
 
 }
 \author{

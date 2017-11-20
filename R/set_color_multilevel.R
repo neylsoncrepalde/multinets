@@ -19,13 +19,13 @@
 #'
 #' @importFrom grDevices adjustcolor
 #'
-#' @examples \dontrun{
+#' @examples
 #' # Check whether a graph is multilevel
 #' is_multilevel(linked_sim)
 #'
 #' # Set the colors for each level
 #' linked_sim <- set_color_multilevel(linked_sim)
-#' }
+#'
 #'
 #' @export
 set_color_multilevel <- function(

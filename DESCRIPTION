@@ -3,9 +3,10 @@ Title: Multilevel Networks Analysis
 Version: 0.1.0
 Authors@R: person("Neylson", "Crepalde", email = "neylsoncrepalde@gmail.com",
                   role = c("aut", "cre"))
-Description: Multilevel Networks is an R package with functions to analyze
-    multilevel networks. It was developed essentially as an extension to the
-    igraph package.
+Description: Analyze multilevel networks as described in Lazega et al (2008)
+    <doi:https://doi.org/10.1016/j.socnet.2008.02.001> and in Lazega and Snijders 
+    (2016, ISBN:978-3-319-24520-1). The package was developed essentially as an 
+    extension to 'igraph'.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

@@ -13,13 +13,13 @@
 #' @return A graph object. A multilevel network with an added \code{shape}
 #'   vertex attribute vector.
 #'
-#' @examples \dontrun{
+#' @examples
 #' # Check whether a graph is multilevel
 #' is_multilevel(linked_sim)
 #'
 #' # Set the shapes for each level
 #' linked_sim <- set_shape_multilevel(linked_sim)
-#' }
+#'
 #'
 #' @export
 set_shape_multilevel <- function(

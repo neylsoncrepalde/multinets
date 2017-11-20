@@ -1,10 +1,10 @@
 #' 2-mode to 1-mode transformation
 #'
-#' This function is a wrapper to the \code{bipartite_projection()} function from
-#'   the igraph package. It transforms a bipartite (2-mode) network to two
-#'   1-mode networks. It is recommended to use it as an analysis
+#' This function is a wrapper to the \code{\link[igraph]{bipartite_projection}}
+#'   function from the 'igraph' package. It transforms a bipartite (2-mode)
+#'   network to two 1-mode networks. It is recommended to use it as an analysis
 #'   tool for a bipartite network that was obtained from
-#'   \code{extract_mesolevel()} function.
+#'   \code{\link{extract_mesolevel}}.
 #'
 #' The function counts 1 edge when two vertices of the
 #'   higher level share a vertex of the lower level and 1 edge when two vertices
@@ -21,13 +21,16 @@
 #'   generated networks. If which is set to "high" or "low", returns a graph
 #'   object.
 #'
-#' @examples \dontrun{
+#' @examples
+#' # First, extract the mesolevel of the multilevel network
+#' affiliation <- extract_mesolevel(linked_sim)
+#'
 #' # To obtain both transformed networks
 #' transformed <- mode_transformation(affiliation)
 #'
 #' # To obtain just one transformed network
 #' high_transformed <- mode_transformation(affiliation, which = "high")
-#' }
+#'
 #'
 #' @export
 mode_transformation <- function(x, which = c("both", "high", "low")){

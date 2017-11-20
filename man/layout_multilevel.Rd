@@ -9,8 +9,8 @@ layout_multilevel(x, layout = igraph::layout_with_fr)
 \arguments{
 \item{x}{a graph object. Must be a multilevel network.}
 
-\item{layout}{The chosen layout algorithm. Default set to
-'Fruchterman-Reingold'.}
+\item{layout}{The chosen layout algorithm. A function layout of the 'igraph'
+package without parentheses. Default set to 'Fruchterman-Reingold'.}
 }
 \value{
 A two- or three-column matrix, each row giving the coordinates of
@@ -26,7 +26,6 @@ In order to facilitate the visualization of multilevel networks, higher
   nodes are set in the lower part of the plane.
 }
 \examples{
-\dontrun{
 # Check if the network is multilevel
 is_multilevel(linked_sim)
 
@@ -41,7 +40,10 @@ l.kk <- layout_multilevel(linked_sim, layout = igraph::layout_with_kk)
 
 # Plot the graph with the new layout
 plot(linked_sim, layout = l.kk)
+
 }
+\seealso{
+\code{\link[igraph]{layout_}}
 }
 \author{
 Neylson Crepalde, \email{neylsoncrepalde@gmail.com}
