@@ -27,8 +27,15 @@ Multilevel Network Data. It was built as an extension to the
 
 ## Installation
 
-The `multinets` package is developed under control version using Git and
-is hosted in GitHub. You can download it from GitHub using `devtools`:
+The `multinets` package is on CRAN. It is developed under control
+version using Git and is hosted in GitHub. You can download it from CRAN
+using:
+
+``` r
+install.packages("multinets")
+```
+
+You can download the development version from GitHub using `devtools`:
 
 ``` r
 # install.packages("devtools")

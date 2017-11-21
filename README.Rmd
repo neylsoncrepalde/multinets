@@ -31,8 +31,15 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-The `multinets` package is developed under control version using Git 
-and is hosted in GitHub. You can download it from GitHub using `devtools`:
+The `multinets` package is on CRAN. It is developed under control version using Git and is hosted in GitHub. You can download it from CRAN using:
+
+```{r install_cran, eval=FALSE}
+install.packages("multinets")
+```
+
+
+You can download the development version from GitHub using `devtools`:
+
 ```{r install, eval=FALSE}
 # install.packages("devtools")
 devtools::install_github("neylsoncrepalde/multinets")
