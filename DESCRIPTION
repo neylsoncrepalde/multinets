@@ -1,6 +1,6 @@
 Package: multinets
 Title: Multilevel Networks Analysis
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: person("Neylson", "Crepalde", email = "neylsoncrepalde@gmail.com",
                   role = c("aut", "cre"))
 Description: Analyze multilevel networks as described in Lazega et al (2008)
