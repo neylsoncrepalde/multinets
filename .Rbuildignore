@@ -5,3 +5,4 @@
 ^\.travis\.yml$
 ^/man/figures/README-example-1\.png$
 ^cran-comments\.md$
+^\.Rhistory$
