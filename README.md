@@ -1,25 +1,44 @@
 multinets: Multilevel Network Analysis
 ================
 
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Licence](https://img.shields.io/badge/licence-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[![Build
+Status](https://travis-ci.org/neylsoncrepalde/multinets.svg?branch=master)](https://travis-ci.org/neylsoncrepalde/multinets)
+
+-----
+
+[![minimal R
+version](https://img.shields.io/badge/R%3E%3D-3.4.2-6666ff.svg)](https://cran.r-project.org/)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/multinets)](https://cran.r-project.org/package=multinets)
+[![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](commits/master)
+
+-----
+
+[![Last-changedate](https://img.shields.io/badge/last%20change-2017--11--21-yellowgreen.svg)](/commits/master)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis build status](https://travis-ci.org/neylsoncrepalde/multinets.svg?branch=master)](https://travis-ci.org/neylsoncrepalde/multinets)
 
-`multinets` is an R package that provides tools to visualize and analyze Multilevel Network Data. It was built as an extension to the [`igraph`](http://igraph.org/r/) package.
+`multinets` is an R package that provides tools to visualize and analyze
+Multilevel Network Data. It was built as an extension to the
+[`igraph`](http://igraph.org/r/) package.
 
-Installation
-------------
+## Installation
 
-The `multinets` package is developed under control version using Git and is hosted in GitHub. You can download it from GitHub using `devtools`:
+The `multinets` package is developed under control version using Git and
+is hosted in GitHub. You can download it from GitHub using `devtools`:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("neylsoncrepalde/multinets")
 ```
 
-Usage
------
+## Usage
 
-As a basic example, we will plot a multilevel network. We are going to use `linked_sim`, a simulated multilevel network dataset.
+As a basic example, we will plot a multilevel network. We are going to
+use `linked_sim`, a simulated multilevel network dataset.
 
 ``` r
 library(igraph)
@@ -32,7 +51,7 @@ library(igraph)
 #> 
 #>     union
 library(multinets)
-#> multinets was developed by Neylson Crepalde as an extension to igraph
+#> multinets was developed by Neylson Crepalde as an extension to 'igraph'
 
 # Load the dataset
 data("linked_sim")
@@ -52,4 +71,4 @@ linked_sim <- set_shape_multilevel(linked_sim)
 plot(linked_sim, layout = l, vertex.size = 5, vertex.label = NA)
 ```
 
-![](man/figures/README-example-1.png)
+![](man/figures/README-example-1.png)<!-- -->
