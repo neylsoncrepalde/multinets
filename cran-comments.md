@@ -1,4 +1,5 @@
 # Resubmission
+* Fixed doi in DESCRIPTION.
 
 * Changed package description including references for the multilevel network 
 methods.
