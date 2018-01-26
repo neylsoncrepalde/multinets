@@ -1,6 +1,10 @@
+# multinets 0.2.0
+
+* *enhance* set_color_multilevel. Cpp code set colors to nodes and edges.
+
 # multinets 0.1.1.9001
 
-* small *enhance* on set_color_multilevel using cpp. Cpp code only sets colors to nodes, not yet to edges.
+* small *enhance* set_color_multilevel using cpp. Cpp code only sets colors to nodes, not yet to edges.
 
 # multinets 0.1.1.9000
 
