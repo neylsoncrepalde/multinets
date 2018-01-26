@@ -5,6 +5,20 @@
 
 using namespace Rcpp;
 
+// getEdgeColor
+StringVector getEdgeColor(LogicalMatrix m, String colorTrue, String colorFalse, String colorDiff);
+RcppExport SEXP _multinets_getEdgeColor(SEXP mSEXP, SEXP colorTrueSEXP, SEXP colorFalseSEXP, SEXP colorDiffSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< LogicalMatrix >::type m(mSEXP);
+    Rcpp::traits::input_parameter< String >::type colorTrue(colorTrueSEXP);
+    Rcpp::traits::input_parameter< String >::type colorFalse(colorFalseSEXP);
+    Rcpp::traits::input_parameter< String >::type colorDiff(colorDiffSEXP);
+    rcpp_result_gen = Rcpp::wrap(getEdgeColor(m, colorTrue, colorFalse, colorDiff));
+    return rcpp_result_gen;
+END_RCPP
+}
 // iterateColor
 StringVector iterateColor(IntegerVector x, String colorTrue, String colorFalse);
 RcppExport SEXP _multinets_iterateColor(SEXP xSEXP, SEXP colorTrueSEXP, SEXP colorFalseSEXP) {
@@ -44,6 +58,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_multinets_getEdgeColor", (DL_FUNC) &_multinets_getEdgeColor, 4},
     {"_multinets_iterateColor", (DL_FUNC) &_multinets_iterateColor, 3},
     {"_multinets_iterateShape", (DL_FUNC) &_multinets_iterateShape, 3},
     {"_multinets_openPlot", (DL_FUNC) &_multinets_openPlot, 1},

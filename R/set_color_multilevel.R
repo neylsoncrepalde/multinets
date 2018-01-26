@@ -36,30 +36,17 @@ set_color_multilevel <- function(
     stop("Not a graph object")
   } else {
     if(is_multilevel(x)){
-      ct = adjustcolor(color.true, V.alpha)
-      cf = adjustcolor(color.false, V.alpha)
       # Vertex
       igraph::V(x)$color <- iterateColor(as.integer(igraph::V(x)$type),
-                                         colorTrue = ct,
-                                         colorFalse = cf)
+                                         adjustcolor(color.true, V.alpha),
+                                         adjustcolor(color.false, V.alpha))
       # Edges
       lacos = igraph::ends(x, igraph::E(x), names = FALSE)
-      # buscando cada laco
-      for (i in 1:nrow(lacos)){
-        # Se os nos do laco forem iguais
-        if (igraph::vertex_attr(x, "type", lacos[i,1]) ==
-            igraph::vertex_attr(x, "type", lacos[i,2])){
-          # Se forem TRUE
-          if (igraph::vertex_attr(x, "type", lacos[i,1]) == TRUE){
-            igraph::E(x)$color[i] = adjustcolor(color.true, E.alpha)
-          } else { # se forem FALSE
-            igraph::E(x)$color[i] = adjustcolor(color.false, E.alpha)
-          }
-        } else {
-          # Se os nos do laco nao forem iguais
-          igraph::E(x)$color[i] = adjustcolor("grey", E.alpha)
-        }
-      }
+      tipos = get_types(lacos, x)
+
+      igraph::E(x)$color = getEdgeColor(tipos, adjustcolor(color.true,E.alpha),
+                                        adjustcolor(color.false,E.alpha),
+                                        adjustcolor("grey",E.alpha))
 
       return(x)
 
@@ -67,4 +54,16 @@ set_color_multilevel <- function(
       stop("The network is not multilevel")
     }
   }
+}
+
+get_types = function(m, g) {
+  if (class(m) != "matrix") stop("m must be a matrix")
+
+  tipos = matrix(nrow = nrow(m), ncol=ncol(m))
+  for (i in 1:nrow(tipos)) {
+    for (j in 1:ncol(tipos)) {
+      tipos[i,j] = igraph::V(g)$type[m[i,j]]
+    }
+  }
+  return(tipos)
 }
