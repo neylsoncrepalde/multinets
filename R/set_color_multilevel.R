@@ -59,7 +59,7 @@ set_color_multilevel <- function(
 get_types = function(m, g) {
   if (class(m) != "matrix") stop("m must be a matrix")
 
-  tipos = matrix(nrow = nrow(m), ncol=ncol(m))
+  tipos = matrix(nrow = nrow(m), ncol = ncol(m))
   for (i in 1:nrow(tipos)) {
     for (j in 1:ncol(tipos)) {
       tipos[i,j] = igraph::V(g)$type[m[i,j]]
