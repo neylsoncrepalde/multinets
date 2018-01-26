@@ -11,5 +11,12 @@ test_that("mode transformation responds properly to different objects", {
 })
 
 test_that("mode transformation works without specifying 'which'", {
-  expect_success(mode_transformation(igraph::upgrade_graph(g.bip)))
+  gteste = igraph::upgrade_graph(g.bip)
+  proj = igraph::bipartite_projection(g.bip)
+  expect_type(mode_transformation(igraph::upgrade_graph(g.bip)), "list")
+  expect_is(mode_transformation(igraph::upgrade_graph(g.bip))$proj1, "igraph")
+
+  for (i in length(igraph::V(proj$proj1)$name)) {
+    expect_true(igraph::V(proj$proj1)$name[i] == igraph::V(mode_transformation(igraph::upgrade_graph(g.bip))$proj1)$name[i])
+  }
 })
