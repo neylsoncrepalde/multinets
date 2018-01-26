@@ -34,6 +34,8 @@
 #'
 #' @export
 mode_transformation <- function(x, which = c("both", "high", "low")){
+  if (missing(which))
+    stop("Need to specify which mode transformation is preferred.")
 
   if (class(x) != "igraph"){
     stop("Not a graph object")
@@ -46,17 +48,10 @@ mode_transformation <- function(x, which = c("both", "high", "low")){
         if (!igraph::is_bipartite(x)){
           stop("Data is not bipartite")
         } else {
-          if (which == "both"){
-            new = igraph::bipartite_projection(x, which = "both")
-          }
-          if (which == "high"){
-            new = igraph::bipartite_projection(x, which = "true")
-          }
-          if (which == "low"){
-            new = igraph::bipartite_projection(x, which = "false")
-          }
-
-          return(new)
+          esc = switch(which,
+                       "both" = return(igraph::bipartite_projection(x, which = "both")),
+                       "high" = return(igraph::bipartite_projection(x, which = "true")),
+                       "low" = return(igraph::bipartite_projection(x, which = "false")))
         }
       })
     }

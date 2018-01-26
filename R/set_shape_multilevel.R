@@ -21,6 +21,7 @@
 #' linked_sim <- set_shape_multilevel(linked_sim)
 #'
 #'
+#'
 #' @export
 set_shape_multilevel <- function(
   x, shape.true = "square", shape.false = "circle"){
@@ -29,8 +30,9 @@ set_shape_multilevel <- function(
   } else {
     if(is_multilevel(x)){
 
-      igraph::V(x)$shape <- ifelse(igraph::V(x)$type == TRUE, shape.true,
-                                   shape.false)
+      igraph::V(x)$shape <- iterateShape(as.integer(igraph::V(x)$type),
+                                         shapeTrue = shape.true,
+                                         shapeFalse = shape.false)
       return(x)
 
     } else {

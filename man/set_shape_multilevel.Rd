@@ -31,6 +31,7 @@ is_multilevel(linked_sim)
 linked_sim <- set_shape_multilevel(linked_sim)
 
 
+
 }
 \author{
 Neylson Crepalde, \email{neylsoncrepalde@gmail.com}
