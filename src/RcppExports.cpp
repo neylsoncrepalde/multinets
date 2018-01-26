@@ -5,6 +5,19 @@
 
 using namespace Rcpp;
 
+// iterateColor
+StringVector iterateColor(IntegerVector x, String colorTrue, String colorFalse);
+RcppExport SEXP _multinets_iterateColor(SEXP xSEXP, SEXP colorTrueSEXP, SEXP colorFalseSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< String >::type colorTrue(colorTrueSEXP);
+    Rcpp::traits::input_parameter< String >::type colorFalse(colorFalseSEXP);
+    rcpp_result_gen = Rcpp::wrap(iterateColor(x, colorTrue, colorFalse));
+    return rcpp_result_gen;
+END_RCPP
+}
 // iterateShape
 StringVector iterateShape(IntegerVector x, String shapeTrue, String shapeFalse);
 RcppExport SEXP _multinets_iterateShape(SEXP xSEXP, SEXP shapeTrueSEXP, SEXP shapeFalseSEXP) {
@@ -20,6 +33,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_multinets_iterateColor", (DL_FUNC) &_multinets_iterateColor, 3},
     {"_multinets_iterateShape", (DL_FUNC) &_multinets_iterateShape, 3},
     {NULL, NULL, 0}
 };

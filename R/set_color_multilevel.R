@@ -36,10 +36,12 @@ set_color_multilevel <- function(
     stop("Not a graph object")
   } else {
     if(is_multilevel(x)){
+      ct = adjustcolor(color.true, V.alpha)
+      cf = adjustcolor(color.false, V.alpha)
       # Vertex
-      igraph::V(x)$color <- ifelse(igraph::V(x)$type == TRUE,
-                                   adjustcolor(color.true, V.alpha),
-                                   adjustcolor(color.false, V.alpha))
+      igraph::V(x)$color <- iterateColor(as.integer(igraph::V(x)$type),
+                                         colorTrue = ct,
+                                         colorFalse = cf)
       # Edges
       lacos = igraph::ends(x, igraph::E(x), names = FALSE)
       # buscando cada laco
