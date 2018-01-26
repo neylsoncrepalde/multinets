@@ -34,8 +34,7 @@
 #'
 #' @export
 mode_transformation <- function(x, which = c("both", "high", "low")){
-  if (missing(which))
-    stop("Need to specify which mode transformation is preferred.")
+  if (missing(which)) which = "both"
 
   if (class(x) != "igraph"){
     stop("Not a graph object")
