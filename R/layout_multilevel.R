@@ -67,27 +67,11 @@ layout_multilevel <- function(x, layout = igraph::layout_with_fr){
       }
       # end for
 
-      return(open_plot(lay_multi))
+      return(openPlot(lay_multi))
 
     } else {
       stop("The network is not multilevel")
     }
 
   }
-}
-
-
-# Needed function
-open_plot <- function(A){
-  B = A
-  for (i in 1:nrow(B)){
-    if (B[i,2] > 0){
-      B[i,2] = B[i,2] + .3
-    }
-    if (B[i,2] < 0){
-      B[i,2] = B[i,2] - .3
-    }
-  }
-
-  return(B)
 }

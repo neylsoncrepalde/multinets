@@ -9,3 +9,7 @@ iterateShape <- function(x, shapeTrue, shapeFalse) {
     .Call('_multinets_iterateShape', PACKAGE = 'multinets', x, shapeTrue, shapeFalse)
 }
 
+openPlot <- function(A) {
+    .Call('_multinets_openPlot', PACKAGE = 'multinets', A)
+}
+

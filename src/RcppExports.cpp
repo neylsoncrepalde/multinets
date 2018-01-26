@@ -31,10 +31,22 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// openPlot
+NumericMatrix openPlot(NumericMatrix A);
+RcppExport SEXP _multinets_openPlot(SEXP ASEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type A(ASEXP);
+    rcpp_result_gen = Rcpp::wrap(openPlot(A));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_multinets_iterateColor", (DL_FUNC) &_multinets_iterateColor, 3},
     {"_multinets_iterateShape", (DL_FUNC) &_multinets_iterateShape, 3},
+    {"_multinets_openPlot", (DL_FUNC) &_multinets_openPlot, 1},
     {NULL, NULL, 0}
 };
 
