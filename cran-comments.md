@@ -1,7 +1,7 @@
 # Submission of version 0.2.0
 
 ## Test environments
-* local Arch Linux, R 3.4.2
+* local Arch Linux, R 3.4.3
 * ubuntu 14.04 (on travis-ci), R 3.4.2
 * win-builder (devel and release)
 
