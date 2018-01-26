@@ -10,6 +10,6 @@ test_that("mode transformation responds properly to different objects", {
   expect_silent(mode_transformation(igraph::upgrade_graph(g.bip), "high"))
 })
 
-test_that("mode transformation works without specifying 'which'," {
+test_that("mode transformation works without specifying 'which'", {
   expect_success(mode_transformation(igraph::upgrade_graph(g.bip)))
 })
