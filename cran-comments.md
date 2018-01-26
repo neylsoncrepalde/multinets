@@ -1,3 +1,17 @@
+# Submission of version 0.2.0
+
+## Test environments
+* local Arch Linux, R 3.4.2
+* ubuntu 14.04 (on travis-ci), R 3.4.2
+* win-builder (devel and release)
+
+R CMD check results
+0 errors | 0 warnings | 0 notes
+
+win-builder check: 
+
+------------------------------------------------
+
 # Resubmission
 * Fixed doi in DESCRIPTION.
 
