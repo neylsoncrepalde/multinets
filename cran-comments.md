@@ -8,7 +8,10 @@
 R CMD check results
 0 errors | 0 warnings | 0 notes
 
-win-builder check - Status: OK
+win-builder check - 
+Devel - Status: OK
+Release - 1 NOTE - Possibly mis-spelled words in DESCRIPTION.
+I checked all the names are correct.
 
 ------------------------------------------------
 
