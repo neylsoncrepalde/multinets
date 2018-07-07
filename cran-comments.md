@@ -10,8 +10,7 @@ R CMD check results
 
 win-builder check - 
 Devel - Status: OK
-Release - 1 NOTE - Possibly mis-spelled words in DESCRIPTION.
-I checked all the names are correct.
+Release - Status: OK
 
 ------------------------------------------------
 
