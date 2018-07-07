@@ -1,3 +1,7 @@
+# multinets 0.2.1
+
+* *bug fix* - correct package imports in DESCRIPTION file ("igraphdata").
+
 # multinets 0.2.0
 
 * *enhance* set_color_multilevel. Cpp code set colors to nodes and edges.
