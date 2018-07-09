@@ -1,4 +1,4 @@
-# multinets 0.2.2
+# multinets 0.2.2 (future)
 
 * *CRAN Note fix* - Fix CRAN Notes in https://cran.r-project.org/web/checks/check_results_multinets.html
 
