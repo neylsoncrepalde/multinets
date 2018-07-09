@@ -1,3 +1,19 @@
+# Submission of version 0.2.2
+
+## Test environments
+* local Arch Linux, R 3.5.1
+* ubuntu 14.04 (on travis-ci), R 3.4.2
+* win-builder (devel and release)
+
+R CMD check results
+0 errors | 0 warnings | 0 notes
+
+win-builder check - 
+Devel - Status: OK
+Release - Status: OK
+
+------------------------------------------------
+
 # Submission of version 0.2.1
 
 ## Test environments

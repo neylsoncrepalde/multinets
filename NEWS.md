@@ -1,5 +1,9 @@
 # multinets 0.2.1
 
+* *CRAN Note fix* - Fix CRAN Notes in https://cran.r-project.org/web/checks/check_results_multinets.html
+
+# multinets 0.2.1
+
 * *bug fix* - correct package imports in DESCRIPTION file ("igraphdata").
 
 # multinets 0.2.0
