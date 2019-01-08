@@ -7,7 +7,7 @@ StringVector getEdgeColor(LogicalMatrix m, String colorTrue, String colorFalse,
   int n = m.nrow();
   StringVector res;
 
-  for (int i = 0; i > n; i++) {
+  for (int i = 0; i < n; i++) {
     // If sender is true
     if (m(i,1) == true) {
       if (m(i,2) == true)
