@@ -65,5 +65,6 @@ get_types = function(m, g) {
       tipos[i,j] = igraph::V(g)$type[m[i,j]]
     }
   }
+  tipos = ifelse(tipos, 1L, 0L)
   return(tipos)
 }

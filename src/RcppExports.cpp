@@ -6,12 +6,12 @@
 using namespace Rcpp;
 
 // getEdgeColor
-StringVector getEdgeColor(LogicalMatrix m, String colorTrue, String colorFalse, String colorDiff);
+StringVector getEdgeColor(IntegerMatrix m, String colorTrue, String colorFalse, String colorDiff);
 RcppExport SEXP _multinets_getEdgeColor(SEXP mSEXP, SEXP colorTrueSEXP, SEXP colorFalseSEXP, SEXP colorDiffSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< LogicalMatrix >::type m(mSEXP);
+    Rcpp::traits::input_parameter< IntegerMatrix >::type m(mSEXP);
     Rcpp::traits::input_parameter< String >::type colorTrue(colorTrueSEXP);
     Rcpp::traits::input_parameter< String >::type colorFalse(colorFalseSEXP);
     Rcpp::traits::input_parameter< String >::type colorDiff(colorDiffSEXP);
