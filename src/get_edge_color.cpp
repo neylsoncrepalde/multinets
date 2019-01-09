@@ -9,15 +9,15 @@ StringVector getEdgeColor(LogicalMatrix m, String colorTrue, String colorFalse,
 
   for (int i = 0; i < n; i++) {
     // If sender is true
-    if (m(i,1) == true) {
-      if (m(i,2) == true)
+    if (m(i,0) == true) {
+      if (m(i,1) == true)
         res.push_back(colorTrue);
       else
         res.push_back(colorDiff);
     }
     // If sender is false
     else {
-      if (m(i,2) == true)
+      if (m(i,1) == true)
         res.push_back(colorDiff);
       else
         res.push_back(colorFalse);
