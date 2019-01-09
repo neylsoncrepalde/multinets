@@ -1,8 +1,8 @@
 # multinets 0.2.2 (future)
 
 * *CRAN Note fix* - Fix CRAN Notes in https://cran.r-project.org/web/checks/check_results_multinets.html
-* *bug fix* - correct problem with seting edge colors
-* Chance levels' distance in layout_multilevel
+* *bug fix* - correct problems with seting edge colors
+* Change levels' distance in layout_multilevel
 
 # multinets 0.2.1
 
