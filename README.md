@@ -11,13 +11,8 @@ Status](https://travis-ci.org/neylsoncrepalde/multinets.svg?branch=master)](http
 -----
 
 [![minimal R
-version](https://img.shields.io/badge/R%3E%3D-3.4.2-6666ff.svg)](https://cran.r-project.org/)
+version](https://img.shields.io/badge/R%3E%3D-3.4.0-6666ff.svg)](https://cran.r-project.org/)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/multinets)](https://cran.r-project.org/package=multinets)
-[![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](commits/master)
-
------
-
-[![Last-changedate](https://img.shields.io/badge/last%20change-2017--11--21-yellowgreen.svg)](/commits/master)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
