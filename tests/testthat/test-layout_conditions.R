@@ -7,5 +7,5 @@ test_that("layout_multilevel responds correctly to various objects",{
 
   expect_error(layout_multilevel(igraph::upgrade_graph(g.bip)))
   expect_error(layout_multilevel(rfid))
-  expect_equal(class(layout_multilevel(linked_sim)), "matrix")
+  expect_equal(inherits(layout_multilevel(linked_sim), "matrix"), TRUE)
 })

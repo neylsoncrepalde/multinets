@@ -1,4 +1,6 @@
-# multinets 0.2.2 (future)
+# multinets 0.2.2
+
+* *CRAN Error fix* - Fix CRAN error in https://cran.r-project.org/web/checks/check_results_multinets.html
 
 * *CRAN Note fix* - Fix CRAN Notes in https://cran.r-project.org/web/checks/check_results_multinets.html
 * *bug fix* - correct problems with seting edge colors
