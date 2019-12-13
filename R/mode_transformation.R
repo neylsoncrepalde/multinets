@@ -36,7 +36,7 @@
 mode_transformation <- function(x, which = c("both", "high", "low")){
   if (missing(which)) which = "both"
 
-  if (class(x) != "igraph"){
+  if (!inherits(x, 'igraph')){
     stop("Not a graph object")
   } else {
     if (is_multilevel(x)){

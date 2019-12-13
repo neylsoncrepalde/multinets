@@ -32,7 +32,7 @@ set_color_multilevel <- function(
   x, color.true = "blue",color.false = "red",
   V.alpha = 0.7, E.alpha = 0.7
 ){
-  if (class(x) != "igraph"){
+  if (!inherits(x, 'igraph')){
     stop("Not a graph object")
   } else {
     if(is_multilevel(x)){
@@ -57,7 +57,7 @@ set_color_multilevel <- function(
 }
 
 get_types = function(m, g) {
-  if (class(m) != "matrix") stop("m must be a matrix")
+  if (!inherits(m, 'matrix')) stop("m must be a matrix")
 
   tipos = matrix(nrow = nrow(m), ncol = ncol(m))
   for (i in 1:nrow(tipos)) {

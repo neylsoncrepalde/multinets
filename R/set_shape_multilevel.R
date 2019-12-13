@@ -25,7 +25,7 @@
 #' @export
 set_shape_multilevel <- function(
   x, shape.true = "square", shape.false = "circle"){
-  if (class(x) != "igraph"){
+  if (!inherits(x, 'igraph')){
     stop("Not a graph object")
   } else {
     if(is_multilevel(x)){

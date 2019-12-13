@@ -38,7 +38,7 @@
 
 #' @export
 layout_multilevel <- function(x, layout = igraph::layout_with_fr){
-  if (class(x) != "igraph"){
+  if (!inherits(x, 'igraph')){
     stop("Not a graph object")
   } else {
     if (is_multilevel(x)){

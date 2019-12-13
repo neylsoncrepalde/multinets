@@ -34,7 +34,7 @@
 #'
 #' @export
 is_multilevel <- function(x){
-  if (class(x) != "igraph"){
+  if (!inherits(x, 'igraph')){
     stop("Not a graph object")
   } else {
     if(igraph::is_bipartite(x)){

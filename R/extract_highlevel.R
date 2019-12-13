@@ -27,7 +27,7 @@
 #'
 #' @export
 extract_highlevel <- function(x){
-  if (class(x) != "igraph"){
+  if (!inherits(x, 'igraph')){
     stop("Not a graph object")
   } else {
     if (!is_multilevel(x)){
